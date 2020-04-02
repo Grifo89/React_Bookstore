@@ -13,6 +13,7 @@ const BooksList = props => {
       </tr>
       {books.map(book => (
         <Book
+          key={book.id}
           id={book.id}
           title={book.title}
           category={book.category}
