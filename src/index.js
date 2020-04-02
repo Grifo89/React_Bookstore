@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import {createStore} from 'redux';
-import {Provider} from 'react-redux'
-import bookReducer from './reducers'
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import Container from './containers/Container';
+import bookReducer from './reducers';
 
 const books = [
   {
@@ -37,7 +37,7 @@ const store = createStore(
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <Container />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root'),
