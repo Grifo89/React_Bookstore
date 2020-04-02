@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-const Book = props => (
-  <tr>
-    <th>{props.id}</th>
-    <th>{props.title}</th>
-    <th>{props.category}</th>
-  </tr>
-)
+const Book = props => {
+  const { id, title, category} = props;
 
-export default Book
+  return (
+    <tr>
+      <th>{id}</th>
+      <th>{title}</th>
+      <th>{category}</th>
+    </tr>
+  );
+};
+
+export default Book;
