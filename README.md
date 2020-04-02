@@ -1,68 +1,84 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">React Bookstore</h1>
 
-## Available Scripts
 
-In the project directory, you can run:
+## Table of Contents
 
-### `yarn start`
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+  - [Milestone One](#milestone-one)
+  - [Milestone Two](#milestone-two)
+  - [Milestone Three](#milestone-three)
+  - [Milestone Four](#milestone-four)
+  - [Milestone Five](#milestone-five)
+- [Run This App](#run-this-app)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## About The Project
 
-### `yarn test`
+React Bookstore is the collaborative project in the React and Redux course in Microverse. It consists of using React to build a CMS for a bookstore.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Full task description on [Microverse's pathwright](https://microverse.pathwright.com/library/fast-track-curriculum/69047/path/step/44896712/) or [Microverse's github](https://github.com/microverseinc/project-redux-bookstore/blob/master/README.md).
 
-### `yarn build`
+For a live version click [here](https://floating-plateau-44876.herokuapp.com/).
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Built With 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* JavaScript ES6
+* React
+* Redux
+* Node
+* Node.js
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Milestone One
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Initialize new React app
+* Delete any unnecessary file or asset
+* Deploy to Heroku
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Milestone Two
 
-## Learn More
+*Coming soon*
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Milestone Three
 
-### Code Splitting
+*Coming soon*
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+### Milestone Four
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+*Coming soon*
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### Milestone Five
 
-### Advanced Configuration
+*Coming soon*
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
+## Run This App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+To run this app you must:
 
-### `yarn build` fails to minify
+* Download the project
+* Open the terminal
+* Navigate to the project's folder
+* Run *npm start*
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+A tab will be opened in the browser.
+
+
+## Contact
+
+* Chritian Salazar - calaca89@gmail.com | [Github](https://github.com/Grifo89)
+* Raphael Cordeiro - phalado@gmail.com | [Github](https://github.com/phalado)
+
+
+## Acknowledgements
+
+[Microverse](https://www.microverse.org/).
