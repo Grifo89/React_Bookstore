@@ -10,8 +10,7 @@ const bookReducer = (state = [], action) => {
         },
       ];
     case 'DELETE_BOOK':
-      let array = state.books.filter(item => item.id !== action.id)
-      return Object.assign({}, state, {books: array})
+      return { ...state, books: state.books.filter(item => item.id !== action.id) };
     default:
       return state;
   }

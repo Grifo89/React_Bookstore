@@ -7,8 +7,9 @@ const Book = props => {
   } = props;
 
   const handleClick = () => {
-    deleteBook(id)
-  }
+    deleteBook(id);
+  };
+
   return (
     <tr>
       <th>{id}</th>

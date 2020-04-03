@@ -11,4 +11,4 @@ const deleteBook = book => ({
   id: book,
 });
 
-export default deleteBook;
+export { addBook, deleteBook };

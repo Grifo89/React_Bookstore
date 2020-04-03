@@ -5,10 +5,10 @@ import Book from '../book/Book';
 class BooksList extends React.Component {
   constructor(props) {
     super(props);
-    this.deltBook = this.delBook.bind(this);
+    this.handleRemoveBook = this.handleRemoveBook.bind(this);
   }
 
-  delBook(book) {
+  handleRemoveBook(book) {
     const { deltBook } = this.props;
     deltBook(book);
   }
@@ -32,7 +32,7 @@ class BooksList extends React.Component {
               id={book.id}
               title={book.title}
               category={book.category}
-              deleteBook={this.deltBook}
+              deleteBook={this.handleRemoveBook}
             />
           ))}
         </tbody>
