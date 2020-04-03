@@ -69,7 +69,7 @@ To run this app you must:
 * Download the project
 * Open the terminal
 * Navigate to the project's folder
-* Run *npm install*
+* Run *nmp install*
 * Run *npm start*
 
 A tab will be opened in the browser.
