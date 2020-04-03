@@ -6,12 +6,15 @@ const Book = props => {
     id, title, category, deleteBook,
   } = props;
 
+  const handleClick = () => {
+    deleteBook(id)
+  }
   return (
     <tr>
       <th>{id}</th>
       <th>{title}</th>
       <th>{category}</th>
-      <th><button type="submit" onClick={({ id }) => deleteBook(id)}>Delete book</button></th>
+      <th><button type="submit" onClick={handleClick}>Delete book</button></th>
     </tr>
   );
 };

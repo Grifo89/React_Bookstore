@@ -1,5 +1,4 @@
 const bookReducer = (state = [], action) => {
-  const newState = Object.assign(state);
   switch (action.type) {
     case 'CREATE_BOOK':
       return [
@@ -11,8 +10,8 @@ const bookReducer = (state = [], action) => {
         },
       ];
     case 'DELETE_BOOK':
-      newState.books.splice(action.id, 1);
-      return newState;
+      let array = state.books.filter(item => item.id !== action.id)
+      return Object.assign({}, state, {books: array})
     default:
       return state;
   }
