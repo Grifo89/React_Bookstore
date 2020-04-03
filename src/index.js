@@ -3,41 +3,46 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import Container from './containers/Container';
-import bookReducer from './reducers';
+import App from './App';
+import bookReducer from './reducers/books';
 
-const books = [
-  {
-    id: Math.floor(Math.random),
-    title: "text 1",
-    category: "Biography"
-  },
-  {
-    id: Math.floor(Math.random),
-    title: "text 2",
-    category: "History"
-  },
-  {
-    id: Math.floor(Math.random),
-    title: "text 3",
-    category: "Horror"
-  },
-  {
-    id: Math.floor(Math.random),
-    title: "text 4",
-    category: "Action"
-  },
-]
+const initialState = {
+  books: [
+    {
+      id: 1,
+      title: 'text 1',
+      category: 'Biography',
+    },
+    {
+      id: Math.floor(Math.random() * 100),
+      title: 'text 2',
+      category: 'History',
+    },
+    {
+      id: Math.floor(Math.random() * 100),
+      title: 'text 3',
+      category: 'Horror',
+    },
+    {
+      id: Math.floor(Math.random() * 100),
+      title: 'text 4',
+      category: 'Action',
+    },
+  ],
+  category: 'ALL',
+};
 
 const store = createStore(
-  bookReducer, books,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-)
+  bookReducer,
+  initialState,
+  // eslint-disable-next-line no-underscore-dangle
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+);
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Container />
+      <App />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root'),

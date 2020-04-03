@@ -32,6 +32,7 @@ For a live version click [here](https://floating-plateau-44876.herokuapp.com/).
 * Redux
 * Node
 * Node.js
+* Proptypes
 
 
 ### Milestone One
@@ -68,6 +69,7 @@ To run this app you must:
 * Download the project
 * Open the terminal
 * Navigate to the project's folder
+* Run *npm install*
 * Run *npm start*
 
 A tab will be opened in the browser.

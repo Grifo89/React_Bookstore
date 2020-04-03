@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 
 const BooksForm = () => {
@@ -6,8 +7,8 @@ const BooksForm = () => {
     <form>
       <label htmlFor="title">Title</label>
       <input type="text" id="title" name="title" />
-      <label htmlFor="title">Category</label>
-      <select>
+      <label htmlFor="category">Category</label>
+      <select id="category">
         {
           categories.map(item => (<option key={item} value={item}>{item}</option>))
         }

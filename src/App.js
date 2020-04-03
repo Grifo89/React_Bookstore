@@ -1,15 +1,13 @@
 import React from 'react';
 import './App.css';
 import BooksForm from './components/bookForm/BooksForm';
-import BooksList from './components/booksList/BooksList';
+import Container from './containers/Container';
 
-const App = () => {
-  return (
-    <div className="App">
-      <BooksForm />
-      <BooksList books={store.getState()} />
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <BooksForm />
+    <Container />
+  </div>
+);
 
 export default App;

@@ -1,16 +1,15 @@
 import { connect } from 'react-redux';
-import App from '../App';
+import Booklist from '../components/booksList/BooksList';
+import deleteBook from '../actions/index';
 
-const mapStateToProps = state => {
-  return {books: state}
-};
+const mapStateToProps = state => ({ books: state.books });
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    function: 
-  }
-}
+const mapDispatchToProps = dispatch => ({
+  deltBook: book => {
+    dispatch(deleteBook(book));
+  },
+});
 
-const Container = connect(mapStateToProps, mapDispatchToProps)(App);
+const Container = connect(mapStateToProps, mapDispatchToProps)(Booklist);
 
 export default Container;
