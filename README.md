@@ -32,7 +32,7 @@ For a live version click [here](https://floating-plateau-44876.herokuapp.com/).
 * Redux
 * Node
 * Node.js
-* PropTypes
+* Proptypes
 
 
 ### Milestone One
