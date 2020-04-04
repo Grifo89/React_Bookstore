@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 const addBook = book => ({
-  type: 'ADD_BOOK',
+  type: 'CREATE_BOOK',
   id: book.id,
   title: book.title,
   category: book.category,

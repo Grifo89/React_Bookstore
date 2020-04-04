@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class BooksForm extends React.Component {
   constructor(props) {
@@ -19,10 +20,15 @@ class BooksForm extends React.Component {
     });
   }
 
-  handleSubmit() {
-    const addBook = this.props;
+  handleSubmit(event) {
+    event.preventDefault();
+    const { addBook } = this.props;
+    const id = Math.floor(Math.random() * 100);
     const { title, category } = this.state;
-    addBook(Math.floor(Math.random() * 100), title, category);
+    addBook({ id, title, category });
+    this.setState({
+      title: '',
+    });
   }
 
   render() {
@@ -51,5 +57,13 @@ class BooksForm extends React.Component {
     );
   }
 }
+
+BooksForm.propTypes = {
+  addBook: PropTypes.func,
+};
+
+BooksForm.defaultProps = {
+  addBook: null,
+};
 
 export default BooksForm;
