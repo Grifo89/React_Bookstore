@@ -1,0 +1,28 @@
+.book-table {
+  display: flex;
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  flex-direction: column;
+  background-color: rgba(256, 256, 256, 0.6);
+  align-items: center;
+  border-radius: 10px;
+}
+
+.table-head {
+  font-size: 20px;
+}
+
+.books-id {
+  width: 50px;
+  padding: 10px;
+}
+
+.books-title {
+  width: 250px;
+}
+
+.books-category,
+.books-delete {
+  width: 140px;
+}

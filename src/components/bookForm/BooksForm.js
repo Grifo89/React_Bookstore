@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './BooksForm.css';
 
 class BooksForm extends React.Component {
   constructor(props) {
@@ -8,7 +9,7 @@ class BooksForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.state = {
       title: '',
-      category: '',
+      category: 'Action',
     };
   }
 
@@ -34,26 +35,29 @@ class BooksForm extends React.Component {
   render() {
     const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
     return (
-      <form>
-        <label htmlFor="title">
-          Title
-          <input
-            type="text"
-            id="title"
-            name="title"
-            onChange={this.handleChange}
-          />
-        </label>
-        <label htmlFor="category">
-          Category
-          <select id="category">
-            {
-              categories.map(item => (<option key={item} value={item}>{item}</option>))
-            }
-          </select>
-        </label>
-        <button type="submit" onClick={this.handleSubmit}>Submit</button>
-      </form>
+      <div className="books-form">
+        <h2 className="bf-title">Add a new book:</h2>
+        <form className="bf-form">
+          <label htmlFor="title" className="bf-form-title">
+            Title:
+            <input
+              type="text"
+              id="title"
+              name="title"
+              onChange={this.handleChange}
+            />
+          </label>
+          <label htmlFor="category" className="bf-form-category">
+            Category
+            <select id="category" onChange={this.handleChange}>
+              {
+                categories.map(item => (<option key={item} value={item}>{item}</option>))
+              }
+            </select>
+          </label>
+          <button className="bf-form-button" type="submit" onClick={this.handleSubmit}>Submit</button>
+        </form>
+      </div>
     );
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Book from '../book/Book';
+import './BooksList.css';
 
 class BooksList extends React.Component {
   constructor(props) {
@@ -17,15 +18,15 @@ class BooksList extends React.Component {
     const { books } = this.props;
     return (
       <table className="book-table">
-        <thead>
+        <thead className="table-head">
           <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Delete</th>
+            <th className="books-id">ID</th>
+            <th className="books-title">Title</th>
+            <th className="books-category">Category</th>
+            <th className="books-delete">Delete</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="table-body">
           {books.map(book => (
             <Book
               key={book.id}

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Book.css';
 
 const Book = props => {
   const {
@@ -12,10 +13,10 @@ const Book = props => {
 
   return (
     <tr>
-      <th>{id}</th>
-      <th>{title}</th>
-      <th>{category}</th>
-      <th><button type="submit" onClick={handleClick}>Delete book</button></th>
+      <th className="books-id">{id}</th>
+      <th className="books-title">{title}</th>
+      <th className="books-category">{category}</th>
+      <th className="books-delete"><button type="submit" onClick={handleClick}>Delete book</button></th>
     </tr>
   );
 };
