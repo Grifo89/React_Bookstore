@@ -1,0 +1,8 @@
+.Category-filter {
+  display: flex;
+  background-color: rgba(256, 256, 256, 0.6);
+  align-items: center;
+  margin: 10px auto;
+  padding: 0 10px;
+  border-radius: 10px;
+}
