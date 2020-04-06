@@ -29,7 +29,7 @@ const initialState = {
       category: 'Action',
     },
   ],
-  filter: 'ALL'
+  filter: 'All',
 };
 
 const store = createStore(

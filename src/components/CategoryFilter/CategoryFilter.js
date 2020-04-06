@@ -1,31 +1,37 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
+import './CategoryFilter.css';
 
 class CategoryFilter extends React.Component {
-  constructor(props){
-    super(props)
-    this.handleChange = this.handleChange.bind(this)
+  constructor(props) {
+    super(props);
+    this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(event){
-    this.props.handleFilter(event.target.value)
+  handleChange(event) {
+    const { handleFilter } = this.props;
+    handleFilter(event.target.value);
   }
 
-  render(){
-    const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+  render() {
+    const categories = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
     return (
-      <form>
+      <form className="Category-filter">
         <label htmlFor="filter">
           Filter by category
-        <select id="filter" onChange={this.handleChange}>
-          {
+          <select id="filter" onChange={this.handleChange}>
+            {
             categories.map(item => (<option key={item} value={item}>{item}</option>))
           }
-        </select>
+          </select>
         </label>
       </form>
-    )
+    );
   }
 }
 
+CategoryFilter.propTypes = {
+  handleFilter: PropTypes.func.isRequired,
+};
 
-export default CategoryFilter
+export default CategoryFilter;

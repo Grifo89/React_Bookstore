@@ -9,8 +9,8 @@ const mapDispatchToProps = dispatch => ({
     dispatch(deleteBook(book));
   },
   changeFilter: filter => {
-    dispatch(changeFilter(filter))
-  }
+    dispatch(changeFilter(filter));
+  },
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Booklist);

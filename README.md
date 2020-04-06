@@ -49,12 +49,16 @@ For a live version click [here](https://floating-plateau-44876.herokuapp.com/).
 
 ### Milestone Three
 
-*Coming soon*
+* Implement *handleChange* method.
+* Implement *handleSubmit* method.
+* Implement *handleRemoveBook* method.
+* Enable *delete* feature.
+* Enable add book feature.
 
 
 ### Milestone Four
 
-*Coming soon*
+* We implemented a filter for the books table
 
 
 ### Milestone Five

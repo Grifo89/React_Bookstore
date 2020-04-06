@@ -9,6 +9,11 @@
   border-radius: 10px;
 }
 
+.book-list {
+  display: flex;
+  flex-direction: column;
+}
+
 .table-head {
   font-size: 20px;
 }
