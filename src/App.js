@@ -7,8 +7,8 @@ import Header from './components/header/Header';
 const App = () => (
   <div className="App">
     <Header />
-    <BooksForm />
     <BookList />
+    <BooksForm />
   </div>
 );
 

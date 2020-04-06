@@ -7,32 +7,62 @@ const Book = props => {
     id, title, category, deleteBook,
   } = props;
 
+  const author = 'Anonymous';
+  const chapters = 'NaN';
+  const progression = null;
+
+  if (props.author) {
+    author = props; 
+  }
+
+  if (props.chapters) {
+    chapters = props; 
+  }
+
+  if (props.progression) {
+    progression = props; 
+  }
+
   const handleClick = () => {
     deleteBook(id);
   };
 
   return (
-    <tr>
-      <th className="books-id">{id}</th>
-      <th className="books-title">{title}</th>
-      <th className="books-category">{category}</th>
-      <th className="books-delete"><button type="submit" onClick={handleClick}>Delete book</button></th>
-    </tr>
+    <div>
+      <div>
+        <div>
+          <p>{category}</p>
+          <p>{title}</p>
+          <p>{author}</p>
+        </div>
+        <div>
+          <p onClick={handleClick}>Remove</p>
+          <p>Edit</p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span className="oval" />
+        </div>
+        <div>
+          {Math.floor((progression / chapters) * 100)}
+          Completed
+        </div>
+      </div>
+      <div>
+        <p>CURRENT CHAPTER</p>
+        <p>{progression}</p>
+        <button>UPDATE PROGRESS</button>
+      </div>
+    </div>
   );
 };
 
 Book.propTypes = {
-  id: PropTypes.number,
-  title: PropTypes.string,
-  category: PropTypes.string,
-  deleteBook: PropTypes.func,
-};
-
-Book.defaultProps = {
-  id: null,
-  title: null,
-  category: null,
-  deleteBook: null,
+  id: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+  deleteBook: PropTypes.func.isRequired,
 };
 
 export default Book;

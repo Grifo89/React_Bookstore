@@ -1,12 +1,45 @@
 .header {
-  font-size: 25px;
-  padding: 10px;
+  height: 95px;
+  font-family: 'Montserrat', sans-serif;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
 }
 
 .title {
-  background-color: rgba(256, 256, 256, 0.6);
-  margin: 0 auto;
-  padding: 10px 30px;
-  border-radius: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0290ff;
+  margin-left: 100px;
+}
+
+.header-books,
+.header-categories {
+  font-size: 13px;
+  letter-spacing: 1.9px;
+  color: #121212
+}
+
+.header-books {
+  margin-left: 47px;
+}
+
+.header-categories {
+  margin-left: calc(587px - 487px - 59px);
+  opacity: 0.5;
+}
+
+.header-icon {
+  width: 45px;
+  height: 45px;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+  margin-right: 100px;
+  display: flex;
+}
+
+.icon {
+  margin: auto;
+  color: #0290ff;
 }
