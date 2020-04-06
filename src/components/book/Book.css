@@ -11,7 +11,7 @@ button {
   margin: 10px 0
 }
 
-.book-container, .book-links {
+.book-container, .book-links, .book-progress {
   display: flex;
   justify-content: space-between;
 }

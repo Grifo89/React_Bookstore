@@ -41,7 +41,7 @@ const Book = props => {
           <p>Edit</p>
         </div>
       </div>
-      <div>
+      <div className="book-progress">
         <div>
           <img src="/content/radial_progress.PNG"/>
         </div>
