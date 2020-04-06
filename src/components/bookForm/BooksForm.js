@@ -14,11 +14,18 @@ class BooksForm extends React.Component {
   }
 
   handleChange(event) {
-    const { category } = this.state;
-    this.setState({
-      title: event.target.value,
-      category,
-    });
+    const { category, title } = this.state;
+    if (event.target.id === 'title') {
+      this.setState({
+        title: event.target.value,
+        category,
+      });
+    } else if (event.target.id === 'category') {
+      this.setState({
+        title,
+        category: event.target.value,
+      });
+    }
   }
 
   handleSubmit(event) {
@@ -33,6 +40,7 @@ class BooksForm extends React.Component {
   }
 
   render() {
+    const { title } = this.state;
     const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
     return (
       <div className="books-form">
@@ -45,6 +53,7 @@ class BooksForm extends React.Component {
               id="title"
               name="title"
               onChange={this.handleChange}
+              value={title}
             />
           </label>
           <label htmlFor="category" className="bf-form-category">
