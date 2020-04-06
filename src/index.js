@@ -4,7 +4,7 @@ import './index.css';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import App from './App';
-import bookReducer from './reducers/books';
+import rootReducer from './reducers';
 
 const initialState = {
   books: [
@@ -33,11 +33,13 @@ const initialState = {
 };
 
 const store = createStore(
-  bookReducer,
+  rootReducer,
   initialState,
   // eslint-disable-next-line no-underscore-dangle
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
+
+console.log(store.getState())
 
 ReactDOM.render(
   <React.StrictMode>

@@ -16,6 +16,7 @@ class BooksList extends React.Component {
 
   render() {
     const { books } = this.props;
+    console.log(books);
     return (
       <table className="book-table">
         <thead className="table-head">
