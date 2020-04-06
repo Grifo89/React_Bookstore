@@ -1,3 +1,49 @@
 button {
   padding: 10px;
 }
+
+.book-container{
+  height: 170px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  padding-left: 27px;
+  margin: 10px 0
+}
+
+.book-container, .book-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-links {
+  width: calc(73px + 34px + 54px + 34px + 27px);
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #4386bf
+}
+
+.category{
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.book-title .title{
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  color: black !important;
+  margin-left: 0;
+}
+
+.book-title .author{
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #4386bf;
+  margin-top: -20px
+}

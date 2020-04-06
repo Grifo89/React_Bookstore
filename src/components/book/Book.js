@@ -12,15 +12,15 @@ const Book = props => {
   const progression = null;
 
   if (props.author) {
-    author = props; 
+    author = props;
   }
 
   if (props.chapters) {
-    chapters = props; 
+    chapters = props;
   }
 
   if (props.progression) {
-    progression = props; 
+    progression = props;
   }
 
   const handleClick = () => {
@@ -28,21 +28,22 @@ const Book = props => {
   };
 
   return (
-    <div>
+    <div className="book-container">
       <div>
-        <div>
-          <p>{category}</p>
-          <p>{title}</p>
-          <p>{author}</p>
+        <div className="book-title">
+          <p className="category">{category}</p>
+          <p className="title">{title}</p>
+          <p className="author">{author}</p>
         </div>
-        <div>
+        <div className="book-links">
+          <p>Comments</p>
           <p onClick={handleClick}>Remove</p>
           <p>Edit</p>
         </div>
       </div>
       <div>
         <div>
-          <span className="oval" />
+          <img src="/content/radial_progress.PNG"/>
         </div>
         <div>
           {Math.floor((progression / chapters) * 100)}
