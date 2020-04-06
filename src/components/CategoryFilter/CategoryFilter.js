@@ -7,7 +7,7 @@ class CategoryFilter extends React.Component {
   }
 
   handleChange(event){
-    this.props.filterBooks(event.target.value)
+    this.props.handleFilter(event.target.value)
   }
 
   render(){

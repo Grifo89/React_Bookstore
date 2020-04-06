@@ -29,7 +29,7 @@ const initialState = {
       category: 'Action',
     },
   ],
-  category: 'ALL',
+  filter: 'ALL'
 };
 
 const store = createStore(
@@ -39,7 +39,6 @@ const store = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
 
-console.log(store.getState())
 
 ReactDOM.render(
   <React.StrictMode>

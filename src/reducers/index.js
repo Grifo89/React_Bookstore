@@ -3,8 +3,8 @@ import filter from './filter'
 import { combineReducers } from 'redux'
 
 const rootReducer = combineReducers({
-  bookReducer,
-  filter
+  books: bookReducer,
+  filter: filter
 })
 
 export default rootReducer

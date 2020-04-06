@@ -1,14 +1,9 @@
 const filter = (state = '', action) => {
-  console.log(action);
   switch (action.type) {
     case 'CHANGE_FILTER':
-      return {
-        ...state,
-        books: [state.books.filter(book => book.category === action.filter)]
-      }
+       return action.filter
     default:
       return state
-
   }
 }
 
