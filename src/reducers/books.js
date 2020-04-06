@@ -1,18 +1,18 @@
 const bookReducer = (state = [], action) => {
-  const newState = Object.assign(state);
   switch (action.type) {
     case 'CREATE_BOOK':
-      return [
+      return {
         ...state,
-        {
-          id: action.id,
-          title: action.title,
-          category: action.category,
-        },
-      ];
+        books: [...state.books,
+          {
+            id: action.id,
+            title: action.title,
+            category: action.category,
+          },
+        ],
+      };
     case 'DELETE_BOOK':
-      newState.books.splice(action.id, 1);
-      return newState;
+      return { ...state, books: state.books.filter(item => item.id !== action.id) };
     default:
       return state;
   }

@@ -1,0 +1,12 @@
+.header {
+  font-size: 25px;
+  padding: 10px;
+  display: flex;
+}
+
+.title {
+  background-color: rgba(256, 256, 256, 0.6);
+  margin: 0 auto;
+  padding: 10px 30px;
+  border-radius: 20px;
+}

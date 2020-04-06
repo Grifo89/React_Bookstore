@@ -1,0 +1,44 @@
+label {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  height: 25px;
+  margin: 10px;
+  width: 200px;
+}
+
+select {
+  height: 25px;
+  margin: 10px;
+  font-size: 15px;
+}
+
+button {
+  font-size: 15px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.books-form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(256, 256, 256, 0.6);
+  margin: auto;
+  width: fit-content;
+  padding: 30px 30px;
+  border-radius: 10px;
+  width: 60%;
+}
+
+.bf-title {
+  font-size: 30px;
+  margin: 0;
+}
+
+.bf-form {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-evenly;
+}

@@ -9,7 +9,7 @@ import bookReducer from './reducers/books';
 const initialState = {
   books: [
     {
-      id: 1,
+      id: Math.floor(Math.random() * 100),
       title: 'text 1',
       category: 'Biography',
     },
