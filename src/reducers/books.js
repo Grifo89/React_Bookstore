@@ -6,6 +6,9 @@ const bookReducer = (state = [], action) => {
           id: action.id,
           title: action.title,
           category: action.category,
+          author: action.author,
+          chapters: action.chapters,
+          progression: action.progression,
         },
       ]);
     case 'DELETE_BOOK':

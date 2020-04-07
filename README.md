@@ -63,7 +63,7 @@ For a live version click [here](https://floating-plateau-44876.herokuapp.com/).
 
 ### Milestone Five
 
-*Coming soon*
+* We modified our project so it would fit the client's desire. Now it fits with [this](https://app.zeplin.io/project/5b35a9e13227086040f8eb75/screen/5b695e29bb8c844f118f9378) design.
 
 
 ## Run This App

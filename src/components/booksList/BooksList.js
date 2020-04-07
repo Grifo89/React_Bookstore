@@ -25,19 +25,8 @@ class BooksList extends React.Component {
     const { books, filter } = this.props;
     return (
       <div className="book-list">
-        <ChangeFilter
-          handleFilter={this.handleFilterChange}
-        />
-        <table className="book-table">
-          <thead className="table-head">
-            <tr>
-              <th className="books-id">ID</th>
-              <th className="books-title">Title</th>
-              <th className="books-category">Category</th>
-              <th className="books-delete">Delete</th>
-            </tr>
-          </thead>
-          <tbody className="table-body">
+        <div className="book-table">
+          <div className="table-body">
             {books.map(book => {
               if (filter === 'All') {
                 return (
@@ -47,6 +36,8 @@ class BooksList extends React.Component {
                     title={book.title}
                     category={book.category}
                     deleteBook={this.handleRemoveBook}
+                    progression={book.progression}
+                    chapters={book.chapters}
                   />
                 );
               }
@@ -59,14 +50,19 @@ class BooksList extends React.Component {
                     title={book.title}
                     category={book.category}
                     deleteBook={this.handleRemoveBook}
+                    progression={book.progression}
+                    chapters={book.chapters}
                   />
                 );
               }
 
               return null;
             })}
-          </tbody>
-        </table>
+          </div>
+        </div>
+        <ChangeFilter
+          handleFilter={this.handleFilterChange}
+        />
       </div>
     );
   }

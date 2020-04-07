@@ -1,10 +1,5 @@
-html {
-  display: block;
-  height: 100%;
-}
-
 body {
-  background-image: url('../content/library.jpeg');
-  background-size: 100% 100%;
-  font-family: 'Gentium Book Basic', serif;
+  margin: 0;
+  background-color: #f5f6fa;
+  display: flex;
 }
