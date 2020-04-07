@@ -8,7 +8,7 @@ button {
   border: solid 1px #e8e8e8;
   background-color: #ffffff;
   padding-left: 27px;
-  margin: 10px 0
+  margin-bottom: 15px;
 }
 
 .book-container, .book-links, .book-progress {
@@ -16,7 +16,7 @@ button {
   justify-content: space-between;
 }
 
-.book-links {
+.book-links, .remove-bttn {
   width: calc(73px + 34px + 54px + 34px + 27px);
   font-family: 'RobotoSlab', sans-serif;
   font-size: 14px;
@@ -29,6 +29,11 @@ button {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: bold;
+  margin: 32px 0 0 0;
+}
+
+.title {
+  margin-top: 4px;
 }
 
 .book-title .title{
@@ -46,4 +51,74 @@ button {
   font-weight: 300;
   color: #4386bf;
   margin-top: -20px
+}
+
+.remove-bttn {
+  background: transparent;
+  border: none;
+}
+
+.progress-img-container {
+  display: flex;
+  align-items: center;
+}
+
+.progress-img {
+  width: 68px;
+}
+
+.completed-container {
+  margin: 51px 0 62px 21px;
+  padding-right: 79px;
+  border-right: solid 1px #e8e8e8;
+}
+
+.percent-complete {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  color: #121212;
+  margin: 0;
+}
+
+.completed {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  opacity: 0.5;
+  color: #121212;
+  margin: 0;
+}
+
+.current-chapter-container {
+  margin-right: 147px;
+}
+
+.current-chapter {
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: #121212;
+  opacity: 0.5;
+  margin-top: 33px;
+}
+
+.current-chapter-prog {
+  margin: 7px 0 23px;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.update-progress-button {
+  width: 184px;
+  height: 33px;
+  border: none;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: white;
 }

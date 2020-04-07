@@ -4,7 +4,7 @@ import './Header.css';
 const Header = () => (
   <header className="header">
     <div className="header">
-      <h1 className="title">Bookstore CMS</h1>
+      <h1 className="page-title">Bookstore CMS</h1>
       <p className="header-books">BOOKS</p>
       <p className="header-categories">CATEGORIES</p>
     </div>

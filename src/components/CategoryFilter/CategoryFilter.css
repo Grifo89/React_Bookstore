@@ -1,3 +1,10 @@
+select {
+  background-color: #0290ff;
+  color: white;
+  border-radius: 4px;
+  height: 33px;
+}
+
 .Category-filter {
   display: flex;
   background-color: rgba(256, 256, 256, 0.6);
@@ -5,4 +12,11 @@
   margin: 10px auto;
   padding: 0 10px;
   border-radius: 10px;
+  position: absolute;
+  top: 160px;
+  left: 725px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  letter-spacing: 1.9px;
+  color: #121212;
 }

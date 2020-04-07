@@ -4,24 +4,8 @@ import './Book.css';
 
 const Book = props => {
   const {
-    id, title, category, deleteBook,
+    id, title, category, deleteBook, author, chapters, progression,
   } = props;
-
-  const author = 'Anonymous';
-  const chapters = 'NaN';
-  const progression = null;
-
-  if (props.author) {
-    author = props;
-  }
-
-  if (props.chapters) {
-    chapters = props;
-  }
-
-  if (props.progression) {
-    progression = props;
-  }
 
   const handleClick = () => {
     deleteBook(id);
@@ -37,23 +21,23 @@ const Book = props => {
         </div>
         <div className="book-links">
           <p>Comments</p>
-          <p onClick={handleClick}>Remove</p>
+          <button className="remove-bttn" type="button" onClick={handleClick}>Remove</button>
           <p>Edit</p>
         </div>
       </div>
       <div className="book-progress">
-        <div>
-          <img src="/content/radial_progress.PNG"/>
+        <div className="progress-img-container">
+          <img className="progress-img" src="/content/radial_progress.PNG" alt="Book progress" />
         </div>
-        <div>
-          {Math.floor((progression / chapters) * 100)}
-          Completed
+        <div className="completed-container">
+          <p className="percent-complete">{Math.floor((progression / chapters) * 100)}</p>
+          <p className="completed">Completed</p>
         </div>
       </div>
-      <div>
-        <p>CURRENT CHAPTER</p>
-        <p>{progression}</p>
-        <button>UPDATE PROGRESS</button>
+      <div className="current-chapter-container">
+        <p className="current-chapter">CURRENT CHAPTER</p>
+        <p className="current-chapter-prog">{progression}</p>
+        <button className="update-progress-button" type="submit">UPDATE PROGRESS</button>
       </div>
     </div>
   );
@@ -64,6 +48,15 @@ Book.propTypes = {
   title: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
   deleteBook: PropTypes.func.isRequired,
+  author: PropTypes.string,
+  chapters: PropTypes.string,
+  progression: PropTypes.string,
+};
+
+Book.defaultProps = {
+  author: 'Anonymous',
+  chapters: '0%',
+  progression: 'Not started',
 };
 
 export default Book;

@@ -18,7 +18,7 @@ class CategoryFilter extends React.Component {
     return (
       <form className="Category-filter">
         <label htmlFor="filter">
-          Filter by category
+          FILTER BY CATEGORY
           <select id="filter" onChange={this.handleChange}>
             {
             categories.map(item => (<option key={item} value={item}>{item}</option>))
