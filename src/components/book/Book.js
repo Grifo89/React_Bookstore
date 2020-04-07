@@ -30,13 +30,20 @@ const Book = props => {
           <img className="progress-img" src="/content/radial_progress.PNG" alt="Book progress" />
         </div>
         <div className="completed-container">
-          <p className="percent-complete">{Math.floor((progression / chapters) * 100)}</p>
+          <p className="percent-complete">
+            {Math.floor((progression / chapters) * 100)}
+            {' '}
+            %
+          </p>
           <p className="completed">Completed</p>
         </div>
       </div>
       <div className="current-chapter-container">
         <p className="current-chapter">CURRENT CHAPTER</p>
-        <p className="current-chapter-prog">{progression}</p>
+        <p className="current-chapter-prog">
+          Chapter:
+          {progression}
+        </p>
         <button className="update-progress-button" type="submit">UPDATE PROGRESS</button>
       </div>
     </div>
@@ -49,14 +56,14 @@ Book.propTypes = {
   category: PropTypes.string.isRequired,
   deleteBook: PropTypes.func.isRequired,
   author: PropTypes.string,
-  chapters: PropTypes.string,
-  progression: PropTypes.string,
+  chapters: PropTypes.number,
+  progression: PropTypes.number,
 };
 
 Book.defaultProps = {
   author: 'Anonymous',
-  chapters: '0%',
-  progression: 'Not started',
+  chapters: 1,
+  progression: 0,
 };
 
 export default Book;

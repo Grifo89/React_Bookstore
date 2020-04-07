@@ -47,24 +47,24 @@ class BooksForm extends React.Component {
         <h2 className="bf-title">Add a new book:</h2>
         <form className="bf-form">
           <label htmlFor="title" className="bf-form-title">
-            Title:
             <input
               type="text"
               id="title"
               name="title"
               onChange={this.handleChange}
               value={title}
+              placeholder="Book Title"
             />
           </label>
           <label htmlFor="category" className="bf-form-category">
-            Category
             <select id="category" onChange={this.handleChange}>
+              <option className="select-first" value="Catogory" disabled>Category</option>
               {
                 categories.map(item => (<option key={item} value={item}>{item}</option>))
               }
             </select>
           </label>
-          <button className="bf-form-button" type="submit" onClick={this.handleSubmit}>Submit</button>
+          <button className="bf-form-button" type="submit" onClick={this.handleSubmit}>ADD BOOK</button>
         </form>
       </div>
     );

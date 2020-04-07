@@ -36,6 +36,8 @@ class BooksList extends React.Component {
                     title={book.title}
                     category={book.category}
                     deleteBook={this.handleRemoveBook}
+                    progression={book.progression}
+                    chapters={book.chapters}
                   />
                 );
               }
@@ -48,6 +50,8 @@ class BooksList extends React.Component {
                     title={book.title}
                     category={book.category}
                     deleteBook={this.handleRemoveBook}
+                    progression={book.progression}
+                    chapters={book.chapters}
                   />
                 );
               }
